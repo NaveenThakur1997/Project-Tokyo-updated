@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* ------------------------------------------------page 1 starts--------------------------------------------------- */
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container::before{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(55%);
+    background-image: url(torii-shrine-sea-itsukushima-shinto-shrine-b8e84ba4d55db296615acd9cb307e4b0.jpg);
+    background-position: center;
+    background-size: 100%;  
+
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+    border-bottom: solid rgb(166, 162, 162) 0.1px;
+}
+nav>ul{
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+}
+nav>ul>li{
+    transition: 0.5s;
+}
+
+nav>i{
+    transition: 0.5s;
+}
+
+nav>i:hover{
+    cursor: pointer;
+    color: rgb(255, 51, 51);
+    scale: 1.2;
+}
+
+nav>ul>li:hover{
+    cursor: pointer;
+    color: rgb(255, 51, 51);
+    scale: 1.2;
+}
+
+.center{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw;
+    height: 20vw;
+    width: 100%;
+    color: white;
+}
+
+.center>ul{
+    list-style: none;
+    line-height: 25px;
+    text-align: right;
+}
+
+.dark{
+    font-size: 14px;
+    color: rgb(192, 186, 186);
+}
+.light{
+    font-size: 22px;
+    font-weight: 600;
+}
+.center>h1{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    width: 50%;
+    transition: 2s; 
+    font-kerning: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.center>h1:hover{
+    cursor: pointer;
+    color: rgb(216, 26, 26);
+}
+.center>ul>li{
+    transition: 0.5s;
+}
+.center>ul>li:hover{
+    cursor: pointer;
+    color: rgb(216, 26, 26);
+    scale: 1.2;
+}
+
+.bottom{
+    padding: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    height: 15vw;
+    width: 100%;
+    /* border: 2px solid white; */
+    font-size: 12px;
+    line-height: 20px;
+    /* text-align-last: center; */
+}
+
+.bb{
+    width: 30%;
+}
+.bb>h4{
+    margin-top: 4%;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.bb>h4:hover{
+color: red;
+scale: 1.1;
+cursor: pointer;
+
+}
+
+/* -------------------------------------------page 1 ends------------------------------------------------------ */
+
+/* --------------------------------------------------page 2 starts---------------------------------------------- */
+
+.container2{
+    background-image: url(photo-1494122353634-c310f45a6d3c.jpg);
+    z-index: -2;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 3%;
+    color: white;
+}
+
+.p2cards{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30%;
+    width: 100%;
+}
+
+.p2cards>.card{
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    height: 28vw;
+    width: 23vw;
+}
+
+.p2cards>.cone{
+    position: relative;
+    transition: 0.5s;
+}
+
+.p2cards>.cone::before{
+    background-image: url(2360977.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(60%);
+    position: absolute;
+    z-index: -1;
+}
+.p2cards>.cone:hover{
+    cursor: pointer;
+    scale: 0.975;
+}
+
+
+.p2cards>.ctwo{
+    position: relative;
+    transition: 0.5s;
+}
+
+.p2cards>.ctwo::before{
+    position: absolute;
+    content: "";
+    background-image: url(8046207.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(60%);
+}
+.p2cards>.ctwo:hover{
+    cursor: pointer;
+    scale: 0.975;
+}
+
+.p2cards>.cthree{
+    position: relative;
+    transition: 0.5s;
+}
+.p2cards>.cthree::before{
+    background-image: url(8046208.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(60%);
+}
+.p2cards>.cthree:hover{
+    cursor: pointer;
+    scale: 0.975;
+}
+
+.p2cards>.cfour{
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.p2cards>.cfour::before{
+    background-image: url(8046214.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+.p2cards>.cfour:hover{
+    cursor: pointer;
+    scale: 0.975;
+}
+
+.card>h1{
+    font-size: 20px;
+}
+/* --------------------------------------------------page 2 ends---------------------------------------------- */
+/* --------------------------------------------------page 3 starts---------------------------------------------- */
+
+
+
+.container4>.overlay>.endL{
+    margin-top: 5%;
+    width: 40%;
+}
+
+.endL>h1{font-size: 50px;}
+.endL>h1,h5,p{
+    padding: 1VW;
+}
+
+.endL>h5{
+    font-size: 25px;
+    font-weight: 100;
+}
+.endL>h5>i{
+    font-size: 35px;
+    transition: 1.5s;
+    }
+.endL>h5>i:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.endL>p{
+    width: 80%;
+    
+}
+
+.endR{
+    display: flex;
+    margin-top: 18%;
+    height: 200px;
+    width: 70%;
+    /* border: 2px solid red; */
+}
+
+.v1>video{
+    object-fit: cover;
+    height: 190px;
+    width: 105%;
+    /* margin-right: 15%; */
+}
+.v2>video{
+    margin-left: 15%;
+    object-fit: cover;
+    height: 190px;
+    width: 105%;
+}
+.container4{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.contaner4>video::before{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: #000000;
+    content: "";
+    z-index: 5;
+}
+.container4>video{
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.overlay{
+    padding: 4vw;
+    display: flex;
+    position: absolute;
+    color: white;
+}
+
+/* --------------------------------------------------page 3 ends---------------------------------------------- */
